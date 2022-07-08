@@ -18,6 +18,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ApacheKafkaConsumerApp" options="-parameters" />
       <module name="ApacheKafkaProducerDemoApplication" options="-parameters" />
+      <module name="multiclientSocket" options="-parameters" />
       <module name="web-socket" options="-parameters" />
     </option>
   </component>

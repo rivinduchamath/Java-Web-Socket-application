@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/ApacheKafkaConsumerApp/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ApacheKafkaProducerDemoApplication/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/multiclientSocket/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/multiclientSocket/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-socket/src/main/java" charset="UTF-8" />
   </component>
 </project>
