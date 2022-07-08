@@ -194,12 +194,12 @@ button.accent {
     word-wrap: break-word;
 }
 
-#chat-page .chat-message {
+#chat-page .message-data{
     padding-left: 68px;
     position: relative;
 }
 
-#chat-page .chat-message i {
+#chat-page .message-data i {
     position: absolute;
     width: 42px;
     height: 42px;
@@ -216,12 +216,12 @@ button.accent {
     text-transform: uppercase;
 }
 
-#chat-page .chat-message span {
+#chat-page .message-data span {
     color: #333;
     font-weight: 600;
 }
 
-#chat-page .chat-message p {
+#chat-page .message-data p {
     color: #43464b;
 }
 

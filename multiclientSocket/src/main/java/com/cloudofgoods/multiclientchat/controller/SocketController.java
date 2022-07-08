@@ -12,17 +12,24 @@ import org.springframework.web.bind.annotation.RequestBody;
 @Controller
 public class SocketController {
 
-	@MessageMapping("/hello")
-	@SendTo("/topic")
-	public Message register(@RequestBody Message chatMessage, SimpMessageHeaderAccessor headerAccessor) {
-		headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
+	@MessageMapping("/chat.sendMessage")
+	@SendTo("/topic/java")
+	public Message register(@Payload Message chatMessage) {
+		//headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
 		return chatMessage;
 	}
 
-	@MessageMapping("/send")
+/*	@MessageMapping("/send")
 	@SendTo("/topic")
-	public Message sendMessage(@Payload Message chatMessage) {
+	public Message sendMessage(@RequestBody Message chatMessage) {
 		return chatMessage;
-	}
+	}*/
 
+	@MessageMapping("/chat.newUser")
+	@SendTo("/topic/java")
+	public Message addUser(@Payload Message webSocketChatMessage,
+										SimpMessageHeaderAccessor headerAccessor) {
+		headerAccessor.getSessionAttributes().put("username", webSocketChatMessage.getSender());
+		return webSocketChatMessage;
+	}
 }
