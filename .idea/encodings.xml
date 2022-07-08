@@ -6,5 +6,6 @@
     <file url="file://$PROJECT_DIR$/multiclientSocket/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/multiclientSocket/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-socket/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-socket/src/main/resources" charset="UTF-8" />
   </component>
 </project>
