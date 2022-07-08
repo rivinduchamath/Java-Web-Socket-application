@@ -1,3 +1,8 @@
+/**
+ * @author - Chamath_Wijayarathna
+ * Date :7/8/2022
+ */
+
 package com.cog.websocket;
 
 import org.springframework.boot.SpringApplication;
@@ -8,11 +13,6 @@ import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
-
-/**
- * @author - Chamath_Wijayarathna
- * Date :7/8/2022
- */
 
 @SpringBootApplication
 @EnableSwagger2
