@@ -8,19 +8,17 @@ import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerCo
 
 @Configuration
 @EnableWebSocketMessageBroker
-public class WebConfig implements WebSocketMessageBrokerConfigurer{
+public class WebConfig implements WebSocketMessageBrokerConfigurer {
 
-	@Override
-	public void registerStompEndpoints(StompEndpointRegistry registry) {
-		registry.addEndpoint("/websocketApp").withSockJS();
-	}
-	
-	@Override
-	public void configureMessageBroker(MessageBrokerRegistry registry) {
-		//registry.enableSimpleBroker("/topic");
-		registry.setApplicationDestinationPrefixes("/app");
-				registry.enableStompBrokerRelay("/topic").setRelayHost("localhost")
-				.setRelayPort(61613).setClientLogin("guest")
-				.setClientPasscode("guest");
-	}
+    @Override
+    public void registerStompEndpoints(StompEndpointRegistry registry) {
+        registry.addEndpoint("/websocketApp").withSockJS();
+    }
+
+    @Override
+    public void configureMessageBroker(MessageBrokerRegistry registry) {
+        //registry.enableSimpleBroker("/topic");
+        registry.setApplicationDestinationPrefixes("/app");
+        registry.enableStompBrokerRelay("/topic").setRelayHost("localhost").setRelayPort(61613).setClientLogin("guest").setClientPasscode("guest");
+    }
 }

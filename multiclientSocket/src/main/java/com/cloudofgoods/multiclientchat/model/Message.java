@@ -8,17 +8,16 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Message {
-	/*private String content;
-	private String sender;
-	private MessageType type;
+    /*private String content;
+    private String sender;
+    private MessageType type;
 
-	public enum MessageType {
-		CHAT, LEAVE, JOIN
-	}*/
-	private String type;
-	private String content;
-	private String sender;
-
+    public enum MessageType {
+        CHAT, LEAVE, JOIN
+    }*/
+    private String type;
+    private String content;
+    private String sender;
 
 
 }

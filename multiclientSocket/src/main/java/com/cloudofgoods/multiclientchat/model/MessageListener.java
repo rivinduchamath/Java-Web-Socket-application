@@ -18,26 +18,26 @@ import org.springframework.web.socket.messaging.SessionDisconnectEvent;
 @Component
 public class MessageListener {
 
-   @Autowired
-   private SimpMessageSendingOperations messagingTemplate;
+    @Autowired
+    private SimpMessageSendingOperations messagingTemplate;
 
-   @EventListener
-   public void handleWebSocketConnectListener(SessionConnectedEvent event) {
-      System.out.println("Received a new web socket connection");
-   }
+    @EventListener
+    public void handleWebSocketConnectListener(SessionConnectedEvent event) {
+        System.out.println("Received a new web socket connection");
+    }
 
-   @EventListener
-   public void handleWebSocketDisconnectListener(SessionDisconnectEvent event) {
-      StompHeaderAccessor headerAccessor = StompHeaderAccessor.wrap(event.getMessage());
+    @EventListener
+    public void handleWebSocketDisconnectListener(SessionDisconnectEvent event) {
+        StompHeaderAccessor headerAccessor = StompHeaderAccessor.wrap(event.getMessage());
 
-      String username = (String) headerAccessor.getSessionAttributes().get("username");
-      if(username != null) {
+        String username = (String) headerAccessor.getSessionAttributes().get("username");
+        if (username != null) {
 
-         Message chatMessage = new Message();
-         chatMessage.setType("Leave");
-         chatMessage.setSender(username);
+            Message chatMessage = new Message();
+            chatMessage.setType("Leave");
+            chatMessage.setSender(username);
 
-         messagingTemplate.convertAndSend("/topic/java", chatMessage);
-      }
-   }
+            messagingTemplate.convertAndSend("/topic/java", chatMessage);
+        }
+    }
 }
