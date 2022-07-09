@@ -17,7 +17,7 @@
 * To Run Rabbitmq http://localhost:15672/
   ##### 1. Password : guest  ,  UserName : guest
   ##### 
-*********
+********
 ***
 <img src="multiclientSocket/src/main/resources/static/images/1.PNG">
 <img src="multiclientSocket/src/main/resources/static/images/2.PNG">
