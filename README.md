@@ -1,6 +1,12 @@
 # Java-Web-Socket-application
-#### In this Project Contain Java Socket Programing with Can Chat between Multi-client and Simple web Config server
+#### In this Project Contain Java Socket Programing with Can Chat between Multi-client With Rabbit MQ and Simple web Config server
 #### And also contain Kafka Producer and Consumer Both Functions
+
+### Tools and Technologies
+* Java (17)
+* Streaming Text Oriented Messaging Protocol
+* Maven
+* Rabbitmq for Msg Queue 
 
 ### Requirements to Run MultiChat Application
 ***
