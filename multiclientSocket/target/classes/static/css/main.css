@@ -34,7 +34,8 @@ body:before {
     position: absolute;
     top: 0;
     left: 0;
-    background: #c8c8c8;
+    background-image: url("https://scx1.b-cdn.net/csz/news/800/2017/theoreticala.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
     content: "";
     z-index: 0;
 }
